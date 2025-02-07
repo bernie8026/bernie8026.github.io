@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>攻略專區 - Bernie’s Honkai Realm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>攻略專區</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="guide.html">攻略專區</a></li>
+                <li><a href="gallery.html">相片庫</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>最新攻略</h2>
+        <div id="articles"></div>
+        <textarea id="newArticle" placeholder="寫下你的攻略..."></textarea>
+        <button onclick="postArticle()">發佈</button>
+    </main>
+    <script>
+        function postArticle() {
+            let content = document.getElementById('newArticle').value;
+            if (content.trim() === "") return;
+            let articleDiv = document.createElement('div');
+            articleDiv.innerHTML = `<p>\${content}</p><hr>`;
+            document.getElementById('articles').prepend(articleDiv);
+            document.getElementById('newArticle').value = "";
+        }
+    </script>
+</body>
+</html>
