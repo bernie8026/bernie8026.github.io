@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>相片庫 - Bernie’s Honkai Realm</title>
+    <title>相片庫 - Bernie's Honkai Realm</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,6 +20,11 @@
     <main>
         <h2>月下相片集</h2>
         <p>這裡將展示月下的圖片。</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="photo-upload">上傳月下的相片:</label>
+            <input type="file" id="photo-upload" name="photo" accept="image/*">
+            <button type="submit">上傳</button>
+        </form>
     </main>
 </body>
 </html>
