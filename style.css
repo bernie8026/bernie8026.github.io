@@ -21,3 +21,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.photo-grid img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
