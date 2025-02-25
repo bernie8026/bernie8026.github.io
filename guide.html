@@ -30,7 +30,7 @@
             let content = document.getElementById('newArticle').value;
             if (content.trim() === "") return;
             let articleDiv = document.createElement('div');
-            articleDiv.innerHTML = `<p>\${content}</p><hr>`;
+            articleDiv.innerHTML = `<p>${content}</p><hr>`;
             document.getElementById('articles').prepend(articleDiv);
             document.getElementById('newArticle').value = "";
         }
