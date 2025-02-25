@@ -14,8 +14,8 @@
         <li><a href="index.html">首頁</a></li>
         <li><a href="guide.html">攻略專區</a></li>
         <li><a href="gallery.html">相片庫</a></li>
-        <li><a href="honkai-info.html">崩壞三資料</a></li>
-        <li><a href="captain-line.html">艦長線</a></li>
+        <li><a href="data.html">崩壞三資料</a></li> 
+        <li><a href="captain.html">艦長線</a></li>    
     </ul>
 </nav>
     </header>
@@ -30,7 +30,7 @@
             let content = document.getElementById('newArticle').value;
             if (content.trim() === "") return;
             let articleDiv = document.createElement('div');
-            articleDiv.innerHTML = `<p>\${content}</p><hr>`;
+            articleDiv.innerHTML = `<p>${content}</p><hr>`;
             document.getElementById('articles').prepend(articleDiv);
             document.getElementById('newArticle').value = "";
         }
