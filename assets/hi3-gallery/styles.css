@@ -1,0 +1,62 @@
+
+:root{
+  --bg:#0e0f14;
+  --card:#151826;
+  --ink:#e6e9f2;
+  --muted:#a8b0c4;
+  --accent:#9aa8ff;
+  --line:#24283b;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", "PingFang HK", "Microsoft JhengHei", "Hiragino Sans", Arial, sans-serif;
+  background: radial-gradient(1200px 800px at 70% -20%, #1d2140 0%, #0e0f14 55%) no-repeat, var(--bg);
+  color:var(--ink);
+}
+.header{
+  max-width:1100px; margin:32px auto 12px; padding:0 16px;
+}
+.title{
+  display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;
+}
+.title h1{margin:0; font-size:28px; letter-spacing:.3px}
+.title .sub{color:var(--muted); font-size:14px}
+.controls{
+  display:flex; gap:12px; margin-top:14px; flex-wrap:wrap
+}
+.input{
+  background:var(--card); border:1px solid var(--line); color:var(--ink);
+  padding:12px 14px; border-radius:12px; outline:none; min-width:260px;
+}
+.grid{
+  max-width:1100px; margin:12px auto 64px; padding:0 16px;
+  display:grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); gap:14px;
+}
+.card{
+  position:relative; overflow:hidden; border-radius: var(--radius);
+  background: linear-gradient(180deg, #212641 0%, #141828 100%);
+  border:1px solid var(--line);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card:hover{ transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,.35) }
+.card .thumb{
+  aspect-ratio: 3/4; width:100%; display:block; object-fit:cover; background:#0b0c12;
+}
+.card .meta{
+  padding:10px 12px 12px;
+  display:flex; flex-direction:column; gap:6px;
+}
+.card .name{ font-weight:650; letter-spacing:.2px }
+.card .name .zh{ color:var(--muted); font-weight:500; margin-left:8px; font-size:13px }
+.tag{
+  display:inline-flex; align-items:center; gap:6px; font-size:12px; color:#cfd6ff;
+  background:#1b1f34; border:1px solid #2a2f4c; border-radius:999px; padding:6px 10px;
+}
+.footer{ color:var(--muted); text-align:center; padding:20px 0 42px; font-size:12px }
+dialog.lightbox{ border:none; padding:0; background:transparent; }
+.lightbox::backdrop{ background: rgba(0,0,0,.65) }
+.lb-img{ max-width:85vw; max-height:85vh; border-radius: 16px; border:1px solid var(--line) }
+.hidden{ display:none }
