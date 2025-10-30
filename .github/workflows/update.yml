@@ -1,0 +1,45 @@
+name: Update Honkai Guide
+
+# 此工作流每天定時運行腳本，檢測是否有新的版本更新。如果產生變動，將其提交並推送到倉庫。
+
+on:
+  schedule:
+    # 每天 09:00 UTC 運行（韓國時間 18:00）。
+    - cron: "0 9 * * *"
+  # 允許手動觸發
+  workflow_dispatch:
+
+jobs:
+  update-guide:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run update script
+        run: |
+          python main.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          # 如果沒有任何變更，則跳過提交
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto update guide"
+            git push
