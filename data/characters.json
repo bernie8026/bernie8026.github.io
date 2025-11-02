@@ -112,7 +112,7 @@
   {
     "slug": "prometheus",
     "en": "PROMETHEUS",
-    "zh": "普羅米修斯"
+    "zh": "普羅米修斯",
   },
   {
     "slug": "carole-pepper",
@@ -132,7 +132,6 @@
     "slug": "lunar-vow-crimson-love",
     "en": "Lunar Vow: Crimson Love",
     "zh": "Lunar Vow: Crimson Love"
- },
-
+ }
   }
 ]
