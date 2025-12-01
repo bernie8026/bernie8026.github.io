@@ -30,7 +30,10 @@ function createCard(c){
   const name = document.createElement('div'); name.className = 'name';
   name.innerHTML = `${c.en}${c.zh ? '<span class="zh">（'+c.zh+'）</span>' : ''}`;
 
-  const tag = document.createElement('div'); tag.className = 'tag'; tag.textContent = 'Valkyrie';
+  const tag = document.createElement('div');
+  tag.className = 'tag';
+  tag.textContent = '女武神 Valkyrie';
+
   meta.appendChild(name); meta.appendChild(tag);
   card.appendChild(img); card.appendChild(meta);
 
