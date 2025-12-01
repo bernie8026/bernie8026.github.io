@@ -15,14 +15,9 @@
     "zh": "布洛妮婭·捷伊慈克"
   },
   {
-    "slug": "murata-himeko",
-    "en": "Murata Himeko",
-    "zh": "無量塔姬子"
-  },
-  {
-    "slug": "yae-sakura",
-    "en": "Yae Sakura",
-    "zh": "八重櫻"
+    "slug": "himeko-murata",
+    "en": "Himeko Murata",
+    "zh": "姬子·村田"
   },
   {
     "slug": "theresa-apocalypse",
@@ -30,39 +25,14 @@
     "zh": "德麗莎·阿波卡利斯"
   },
   {
-    "slug": "fu-hua",
-    "en": "Fu Hua",
-    "zh": "符華"
+    "slug": "fischl",
+    "en": "Fischl",
+    "zh": "菲謝爾"
   },
   {
-    "slug": "kallen-kaslana",
-    "en": "Kallen Kaslana",
-    "zh": "卡蓮·卡斯蘭娜"
-  },
-  {
-    "slug": "rita-rossweisse",
-    "en": "Rita Rossweisse",
-    "zh": "麗塔·洛斯薇瑟"
-  },
-  {
-    "slug": "seele-vollerei",
-    "en": "Seele Vollerei",
-    "zh": "希兒·芙樂艾"
-  },
-  {
-    "slug": "liliya-olenyeva",
-    "en": "Liliya Olenyeva",
-    "zh": "莉莉婭·奧琳涅娃"
-  },
-  {
-    "slug": "rozaliya-olenyeva",
-    "en": "Rozaliya Olenyeva",
-    "zh": "蘿莎莉婭·奧琳涅娃"
-  },
-  {
-    "slug": "durandal",
-    "en": "Durandal",
-    "zh": "杜蘭達爾"
+    "slug": "yae-sakura",
+    "en": "Yae Sakura",
+    "zh": "八重櫻"
   },
   {
     "slug": "elysia",
@@ -75,24 +45,24 @@
     "zh": "梅比烏斯"
   },
   {
-    "slug": "aponia",
-    "en": "Aponia",
-    "zh": "阿波尼亞"
-  },
-  {
     "slug": "eden",
     "en": "Eden",
     "zh": "伊甸"
   },
   {
-    "slug": "griseo",
-    "en": "Griseo",
-    "zh": "格蕾修"
+    "slug": "aponia",
+    "en": "Aponia",
+    "zh": "阿波尼亞"
   },
   {
     "slug": "vill-v",
     "en": "Vill-V",
     "zh": "維爾薇"
+  },
+  {
+    "slug": "griseo",
+    "en": "Griseo",
+    "zh": "格雷修"
   },
   {
     "slug": "pardofelis",
@@ -112,7 +82,7 @@
   {
     "slug": "prometheus",
     "en": "PROMETHEUS",
-    "zh": "普羅米修斯",
+    "zh": "普羅米修斯"
   },
   {
     "slug": "carole-pepper",
@@ -125,17 +95,13 @@
     "zh": "西琳"
   },
   {
-  {
     "slug": "thelema-nutriscu",
     "en": "Thelema Nutriscu",
-    "zh": "泰蕾马·纳特里斯库"
+    "zh": "泰蕾瑪·納特里斯庫"
   },
   {
     "slug": "lunar-vow-crimson-love",
     "en": "Lunar Vow: Crimson Love",
-    "zh": "大月下"
+    "zh": "月下誓約・予愛以心"
   }
-}
-]
-}
 ]
