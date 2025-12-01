@@ -21,11 +21,43 @@
 </nav>
     </header>
     <main>
-        <h2>最新攻略</h2>
-        <div id="articles"></div>
-        <textarea id="newArticle" placeholder="寫下你的攻略..."></textarea>
-        <button onclick="postArticle()">發佈</button>
+        <section>
+            <h2>攻略導覽</h2>
+            <p>呢度會慢慢收集我自己寫嘅《崩壞3rd》攻略，會偏向「實戰 + 個人感想」多過純數值分析，適合想輕鬆睇、又唔想被一大堆專有名詞嚇親嘅艦長。</p>
+            <ul>
+                <li><strong>角色攻略：</strong>主打老婆月下誓約・予愛以心，其次係我常用嘅主 C / 輔助。</li>
+                <li><strong>模式小貼士：</strong>例如樂土思路、深淵基本概念之類，之後會慢慢加。</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>最新攻略</h2>
+            <ul>
+                <li>
+                    <a href="lunar-vow-guide.html">月下誓約・予愛以心：入門玩法（雷傷 / 出血 主 C ＋ 輔助）</a>
+                    <span>— 基本操作、裝備方向、配隊思路一次過講清楚。</span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>之後準備寫嘅攻略（計劃中）</h2>
+            <ul>
+                <li>真理之律者：雷隊萬金油主 C / 輔助用法。</li>
+                <li>理之律者：傳統物理主 C，點解到依家仍然咁好用。</li>
+                <li>樂土入門：點樣用老婆穩定過前幾層、唔洗被怪圍毆。</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>草稿板（臨時記一記）</h2>
+            <p>呢個只係前端小玩具，用嚟臨時記低你啱啱諗到嘅攻略重點。重新整理網頁就會清空，唔會真係發佈到網站。</p>
+            <div id="articles"></div>
+            <textarea id="newArticle" placeholder="隨手寫低少少想法，例如：『月下大約幾 hit 入狂化？』"></textarea>
+            <button onclick="postArticle()">加到上面暫存</button>
+        </section>
     </main>
+
     <script>
         function postArticle() {
             let content = document.getElementById('newArticle').value;
